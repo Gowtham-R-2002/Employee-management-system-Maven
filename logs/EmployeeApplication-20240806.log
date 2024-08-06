@@ -1,0 +1,102 @@
+2024-08-06 12:15:26.086 [EmployeeApplication.main()] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.0.Final
+2024-08-06 12:15:26.432 [EmployeeApplication.main()] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-08-06 12:15:26.528 [EmployeeApplication.main()] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2024-08-06 12:15:26.543 [EmployeeApplication.main()] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/ems_annotation]
+2024-08-06 12:15:26.543 [EmployeeApplication.main()] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2024-08-06 12:15:26.543 [EmployeeApplication.main()] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-08-06 12:15:26.543 [EmployeeApplication.main()] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2024-08-06 12:15:26.793 [EmployeeApplication.main()] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-08-06 12:15:27.496 [EmployeeApplication.main()] INFO  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2483c4be] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-08-06 12:15:27.590 [EmployeeApplication.main()] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-08-06 12:15:27.684 [EmployeeApplication.main()] INFO  com.i2i.ems.department.dao.DepartmentDaoImpl - Department generated with ID : 34
+2024-08-06 12:15:27.731 [EmployeeApplication.main()] INFO  com.i2i.ems.department.dao.DepartmentDaoImpl - Unique ID generated : D034 for Department ID 34
+2024-08-06 12:21:50.246 [EmployeeApplication.main()] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.0.Final
+2024-08-06 12:21:50.605 [EmployeeApplication.main()] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-08-06 12:21:50.715 [EmployeeApplication.main()] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2024-08-06 12:21:50.730 [EmployeeApplication.main()] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/ems_annotation]
+2024-08-06 12:21:50.730 [EmployeeApplication.main()] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2024-08-06 12:21:50.730 [EmployeeApplication.main()] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-08-06 12:21:50.730 [EmployeeApplication.main()] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2024-08-06 12:21:50.935 [EmployeeApplication.main()] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-08-06 12:21:51.560 [EmployeeApplication.main()] INFO  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5db79b9] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-08-06 12:21:51.669 [EmployeeApplication.main()] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-08-06 12:21:51.778 [EmployeeApplication.main()] INFO  com.i2i.ems.department.dao.DepartmentDaoImpl - Department generated with ID : 38
+2024-08-06 12:21:51.825 [EmployeeApplication.main()] INFO  com.i2i.ems.department.dao.DepartmentDaoImpl - Unique ID generated : D038 for Department ID 38
+2024-08-06 12:21:56.459 [EmployeeApplication.main()] INFO  org.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/ems_annotation]
+2024-08-06 12:22:10.226 [EmployeeApplication.main()] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.0.Final
+2024-08-06 12:22:10.585 [EmployeeApplication.main()] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-08-06 12:22:10.694 [EmployeeApplication.main()] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2024-08-06 12:22:10.694 [EmployeeApplication.main()] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/ems_annotation]
+2024-08-06 12:22:10.694 [EmployeeApplication.main()] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2024-08-06 12:22:10.694 [EmployeeApplication.main()] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-08-06 12:22:10.694 [EmployeeApplication.main()] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2024-08-06 12:22:10.897 [EmployeeApplication.main()] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-08-06 12:22:11.555 [EmployeeApplication.main()] INFO  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@769c3a8a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-08-06 12:22:11.665 [EmployeeApplication.main()] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-08-06 12:22:11.774 [EmployeeApplication.main()] INFO  com.i2i.ems.department.dao.DepartmentDaoImpl - Department generated with ID : 39
+2024-08-06 12:22:11.821 [EmployeeApplication.main()] INFO  com.i2i.ems.department.dao.DepartmentDaoImpl - Unique ID generated : D039 for Department ID 39
+2024-08-06 12:22:38.921 [EmployeeApplication.main()] INFO  com.i2i.ems.department.dao.DepartmentDaoImpl - Department generated with ID : 40
+2024-08-06 12:22:38.937 [EmployeeApplication.main()] INFO  com.i2i.ems.department.dao.DepartmentDaoImpl - Unique ID generated : D040 for Department ID 40
+2024-08-06 12:22:42.484 [EmployeeApplication.main()] INFO  org.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/ems_annotation]
+2024-08-06 12:23:40.719 [EmployeeApplication.main()] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.0.Final
+2024-08-06 12:23:41.091 [EmployeeApplication.main()] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-08-06 12:23:41.201 [EmployeeApplication.main()] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2024-08-06 12:23:41.216 [EmployeeApplication.main()] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/ems_annotation]
+2024-08-06 12:23:41.216 [EmployeeApplication.main()] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2024-08-06 12:23:41.216 [EmployeeApplication.main()] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-08-06 12:23:41.216 [EmployeeApplication.main()] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2024-08-06 12:23:41.451 [EmployeeApplication.main()] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-08-06 12:23:42.122 [EmployeeApplication.main()] INFO  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@418792de] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-08-06 12:23:42.232 [EmployeeApplication.main()] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-08-06 12:23:42.326 [EmployeeApplication.main()] INFO  com.i2i.ems.department.dao.DepartmentDaoImpl - Department generated with ID : 41
+2024-08-06 12:23:42.372 [EmployeeApplication.main()] INFO  com.i2i.ems.department.dao.DepartmentDaoImpl - Unique ID generated : D041 for Department ID 41
+2024-08-06 12:23:53.201 [EmployeeApplication.main()] INFO  org.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/ems_annotation]
+2024-08-06 12:38:32.285 [EmployeeApplication.main()] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.0.Final
+2024-08-06 12:38:32.645 [EmployeeApplication.main()] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-08-06 12:38:32.754 [EmployeeApplication.main()] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2024-08-06 12:38:32.754 [EmployeeApplication.main()] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/ems_annotation]
+2024-08-06 12:38:32.754 [EmployeeApplication.main()] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2024-08-06 12:38:32.754 [EmployeeApplication.main()] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-08-06 12:38:32.754 [EmployeeApplication.main()] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2024-08-06 12:38:32.957 [EmployeeApplication.main()] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-08-06 12:38:33.596 [EmployeeApplication.main()] INFO  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4b4c1418] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-08-06 12:38:33.690 [EmployeeApplication.main()] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-08-06 12:38:33.800 [EmployeeApplication.main()] INFO  com.i2i.ems.department.dao.DepartmentDaoImpl - Department generated with ID : 42
+2024-08-06 12:38:33.846 [EmployeeApplication.main()] INFO  com.i2i.ems.department.dao.DepartmentDaoImpl - Unique ID generated : D042 for Department ID 42
+2024-08-06 12:41:34.545 [EmployeeApplication.main()] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.0.Final
+2024-08-06 12:41:34.909 [EmployeeApplication.main()] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-08-06 12:41:35.018 [EmployeeApplication.main()] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2024-08-06 12:41:35.018 [EmployeeApplication.main()] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/ems_annotation]
+2024-08-06 12:41:35.018 [EmployeeApplication.main()] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2024-08-06 12:41:35.018 [EmployeeApplication.main()] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-08-06 12:41:35.018 [EmployeeApplication.main()] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2024-08-06 12:41:35.237 [EmployeeApplication.main()] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-08-06 12:41:35.940 [EmployeeApplication.main()] INFO  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2483c4be] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-08-06 12:41:36.096 [EmployeeApplication.main()] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-08-06 12:41:36.190 [EmployeeApplication.main()] INFO  com.i2i.ems.department.dao.DepartmentDaoImpl - Department generated with ID : 43
+2024-08-06 12:41:36.221 [EmployeeApplication.main()] INFO  com.i2i.ems.department.dao.DepartmentDaoImpl - Unique ID generated : D043 for Department ID 43
+2024-08-06 12:41:53.876 [EmployeeApplication.main()] INFO  org.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/ems_annotation]
+2024-08-06 12:43:41.851 [EmployeeApplication.main()] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.0.Final
+2024-08-06 12:43:42.257 [EmployeeApplication.main()] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-08-06 12:43:42.382 [EmployeeApplication.main()] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2024-08-06 12:43:42.398 [EmployeeApplication.main()] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/ems_annotation]
+2024-08-06 12:43:42.398 [EmployeeApplication.main()] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2024-08-06 12:43:42.398 [EmployeeApplication.main()] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-08-06 12:43:42.398 [EmployeeApplication.main()] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2024-08-06 12:43:42.694 [EmployeeApplication.main()] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-08-06 12:43:43.444 [EmployeeApplication.main()] INFO  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@418792de] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-08-06 12:43:43.600 [EmployeeApplication.main()] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-08-06 12:43:43.694 [EmployeeApplication.main()] INFO  com.i2i.ems.department.dao.DepartmentDaoImpl - Department generated with ID : 44
+2024-08-06 12:43:43.757 [EmployeeApplication.main()] INFO  com.i2i.ems.department.dao.DepartmentDaoImpl - Unique ID generated : D044 for Department ID 44
+2024-08-06 14:12:00.152 [EmployeeApplication.main()] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.0.Final
+2024-08-06 14:12:00.511 [EmployeeApplication.main()] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-08-06 14:12:00.621 [EmployeeApplication.main()] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2024-08-06 14:12:00.621 [EmployeeApplication.main()] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/ems_annotation]
+2024-08-06 14:12:00.621 [EmployeeApplication.main()] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2024-08-06 14:12:00.621 [EmployeeApplication.main()] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2024-08-06 14:12:00.621 [EmployeeApplication.main()] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2024-08-06 14:12:00.886 [EmployeeApplication.main()] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-08-06 14:12:01.624 [EmployeeApplication.main()] INFO  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5db79b9] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-08-06 14:12:01.749 [EmployeeApplication.main()] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-08-06 14:12:01.859 [EmployeeApplication.main()] INFO  com.i2i.ems.department.dao.DepartmentDaoImpl - Department generated with ID : 45
+2024-08-06 14:12:01.906 [EmployeeApplication.main()] INFO  com.i2i.ems.department.dao.DepartmentDaoImpl - Unique ID generated : D045 for Department ID 45
