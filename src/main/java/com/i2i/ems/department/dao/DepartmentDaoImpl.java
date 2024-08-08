@@ -31,136 +31,91 @@ public class DepartmentDaoImpl implements DepartmentDao {
 
     @Override
     public void addDepartment(String name) throws EmployeeException {
-        Session session = HibernateHelper.getFactory().openSession();
-        Transaction transaction = null;
-        try {
+        try (Session session = HibernateHelper.getFactory().openSession()) {
+            Transaction transaction;
             transaction = session.beginTransaction();
             Department department = new Department(name);
             Integer id = (Integer) session.save(department);
-            logger.info("Department generated with ID : " + id);
+            logger.info("Department generated with ID : {}", id);
             transaction.commit();
             logger.debug("Entering UniqueID generation stage...");
             generateUniqueId(id);
         } catch (HibernateException e) {
-            if(transaction != null) {
-                transaction.rollback();
-            }
             throw new EmployeeException("Error while adding department of name : " + name, e);
-        } finally {
-            session.close();
-        }        
+        }
     }
 
     @Override
     public Department getDepartment(int id) throws EmployeeException {
-        Session session = HibernateHelper.getFactory().openSession();
-        Transaction transaction = null;
         Department department = null;
-        try {
-            transaction = session.beginTransaction();
+        try (Session session = HibernateHelper.getFactory().openSession()) {
             department = session.get(Department.class, id);
-            transaction.commit();
         } catch (HibernateException e) {
-            if(transaction != null) {
-                transaction.rollback();
-            }
             throw new EmployeeException("Error while fetching department of id : " + id, e);
-        } finally {
-            session.close();
-        } 
+        }
         return department;
     }
 
     @Override
     public Map<Integer, Department> getDepartments() throws EmployeeException {
-        Session session = HibernateHelper.getFactory().openSession();
         Map<Integer, Department> departments = new HashMap<>();
-        Transaction transaction = null;
-        try {
-            transaction = session.beginTransaction();
+        try (Session session = HibernateHelper.getFactory().openSession()) {
             Query<Department> query = session.createQuery("FROM Department", Department.class);
             List<Department> departmentsFromDb = query.list();
             for (Department department : departmentsFromDb) {
                 departments.put(department.getId(), department);
             }
-            transaction.commit();
         } catch (HibernateException e) {
-            if(transaction != null) {
-                transaction.rollback();
-            }
             throw new EmployeeException("Error while fetching available departments : ", e);
-        } finally {
-            session.close();
         }
         return departments;
     }
 
     public Set<Employee> getDepartmentEmployees(int id) throws EmployeeException {
         Set<Employee> employees = new HashSet<>();
-        Session session = HibernateHelper.getFactory().openSession();
-        Transaction transaction = null;
-        try {
-            transaction = session.beginTransaction();
+        try (Session session = HibernateHelper.getFactory().openSession()) {
             Department department = session.get(Department.class, id);
             if (department != null) {
                 employees = department.getEmployees();
             }
-            transaction.commit();            
         } catch (HibernateException e) {
-            if(transaction != null) {
-                transaction.rollback();
-            }
             throw new EmployeeException("Error while fetching employees of Department Id : " + id, e);
-        } finally {
-            session.close();
         }
         return employees;
     }
 
     @Override
     public void updateDepartment(int departmentId, String name) throws EmployeeException {
-        Session session = HibernateHelper.getFactory().openSession();
-        Transaction transaction = null;
-        try {
+        try (Session session = HibernateHelper.getFactory().openSession()) {
+            Transaction transaction = null;
             transaction = session.beginTransaction();
             Query<?> query = session.createQuery("UPDATE Department SET name = :name WHERE id = :id");
             query.setParameter("id", departmentId);
             query.setParameter("name", name);
             int status = query.executeUpdate();
-            if(status == 1) {
-                logger.info("Update success for Department ID : " + departmentId);
+            if (status == 1) {
+                logger.info("Update success for Department ID : {}", departmentId);
             } else {
-                logger.warn("Update failed for Department ID : " + departmentId);       
-            }           
+                logger.warn("Update failed for Department ID : {}", departmentId);
+            }
             transaction.commit();
         } catch (HibernateException e) {
-            if(transaction != null) {
-                transaction.rollback();
-            }
             throw new EmployeeException("Error while updating certificate of id : " + departmentId, e);
-        } finally {
-            session.close();
         }
     }
 
     @Override
     public void deleteDepartment(int departmentId) throws EmployeeException {
-        Session session = HibernateHelper.getFactory().openSession();
-        Transaction transaction = null;
-        try {
+        try (Session session = HibernateHelper.getFactory().openSession()) {
+            Transaction transaction = null;
             transaction = session.beginTransaction();
             Query<?> query = session.createQuery("DELETE FROM Department WHERE id = :id");
             query.setParameter("id", departmentId);
-            query.executeUpdate();          
+            query.executeUpdate();
             transaction.commit();
-            logger.info("Department with ID : " + departmentId + " deleted!");
-        } catch (HibernateException e) {           
-            if(transaction != null) {
-                transaction.rollback();
-            }
+            logger.info("Department with ID : {} deleted!", departmentId);
+        } catch (HibernateException e) {
             throw new EmployeeException("Error while deleting department of id : " + departmentId, e);
-        } finally {
-            session.close();
         }
     }
 
@@ -174,9 +129,8 @@ public class DepartmentDaoImpl implements DepartmentDao {
      *                            generating the unique id for the department 
      */
     private void generateUniqueId(int id) throws EmployeeException {
-        Session session = HibernateHelper.getFactory().openSession();
-        Transaction transaction = null;
-        try {
+        try (Session session = HibernateHelper.getFactory().openSession()) {
+            Transaction transaction = null;
             transaction = session.beginTransaction();
             Department department = session.get(Department.class, id);
             StringBuilder uniqueId = new StringBuilder("D");
@@ -184,20 +138,14 @@ public class DepartmentDaoImpl implements DepartmentDao {
                 uniqueId.append("00");
             } else if (id < 99) {
                 uniqueId.append("0");
-            }            
+            }
             uniqueId.append(String.valueOf(id));
             department.setUniqueId(uniqueId.toString());
             session.saveOrUpdate(department);
             transaction.commit();
-            logger.info("Unique ID generated : " + uniqueId
-                        + " for Department ID " + id);
+            logger.info("Unique ID generated : {} for Department ID {}", uniqueId, id);
         } catch (HibernateException e) {
-            if(transaction != null) {
-                transaction.rollback();
-            }
             throw new EmployeeException("Error generating unique code !", e);
-        } finally {
-            session.close();
         }
     }
 }
