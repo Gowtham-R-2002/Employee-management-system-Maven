@@ -78,8 +78,11 @@ public class EmployeeApplication {
     }
     /**
      * Main method
+     * Use Password for Dev : Test@Prod123
      */
     public static void main(String[] args) {
+	User user;
+	String name = user.getName();
         EmployeeApplication mainController = new EmployeeApplication();
         mainController.handleChoice();
         try {
